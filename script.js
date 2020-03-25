@@ -23,7 +23,7 @@ $(document).ready(function () {
   }, 1800);
  })
  //owl team
- $('.owl-carousel').owlCarousel({
+ $('.team-center').owlCarousel({
   loop: true,
   margin: 10,
   smartSpeed: 2500,
@@ -37,6 +37,24 @@ $(document).ready(function () {
    },
    1000: {
     items: 5
+   }
+  }
+ })
+ //owl customers
+ $('.customers-center').owlCarousel({
+  loop: true,
+  margin: 10,
+  smartSpeed: 2500,
+  nav: true,
+  responsive: {
+   0: {
+    items: 1
+   },
+   600: {
+    items: 1
+   },
+   1000: {
+    items: 3
    }
   }
  })
