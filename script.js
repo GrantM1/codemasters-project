@@ -22,4 +22,22 @@ $(document).ready(function () {
    scrollTop: $(target).offset().top
   }, 1800);
  })
+ //owl team
+ $('.owl-carousel').owlCarousel({
+  loop: true,
+  margin: 10,
+  smartSpeed: 2500,
+  nav: true,
+  responsive: {
+   0: {
+    items: 1
+   },
+   600: {
+    items: 3
+   },
+   1000: {
+    items: 5
+   }
+  }
+ })
 })
