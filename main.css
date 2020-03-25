@@ -87,9 +87,9 @@ header {
 
  /* 4 next lines the same as to writen in the short version after url img */
  /* background-position: center;
- background-size: cover;
- background-attachment: fixed;
- background-repeat: no-repeat; */
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat; */
  display: flex;
  flex-direction: column;
 }
@@ -216,6 +216,7 @@ nav {
 
 /* skills  */
 .skills {
+ padding: 40px 0;
  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
   url(img/skills-bcg.jpeg) center/cover fixed no-repeat;
 }
@@ -294,7 +295,98 @@ nav {
 
 }
 
+/* about section */
+.about-image {
+ min-height: 80vh;
+ background: url(img/about-bcg.jpeg) center/cover fixed no-repeat;
+}
 
+.about-text {
+ min-height: 80vh;
+ display: flex;
+ align-items: center;
+ background: #03243e;
+ color: #f5f3f5;
+ padding: 40px 0;
+}
+
+.about-text-center {
+ width: 90%;
+ margin: 0 auto;
+}
+
+.about-text h1 {
+ font-size: 30px;
+ text-transform: uppercase;
+ margin-bottom: 10px;
+
+}
+
+.about-text-underline {
+ width: 200px;
+ height: 5px;
+ background: #8fcbfd;
+}
+
+.about-text p {
+ margin: 20px 0;
+ line-height: 2;
+ font-style: italic;
+
+}
+
+.about-text a {
+ display: inline-block;
+ text-decoration: none;
+ text-transform: uppercase;
+ color: #f5f3f5;
+ padding: 15px 10px;
+ border: 3px solid #f5f3f5;
+ transition: border 1s ease, background 1s ease, color 1s ease;
+}
+
+.about-text a:hover {
+ color: #191919;
+ background: #f5f3f5;
+ border-color: #f5f3f5;
+}
+
+@media screen and (min-width:776px) {
+ .about {
+  display: flex;
+ }
+
+ .about-text {
+  flex: 0 0 30%;
+ }
+
+ .about-image {
+  flex: 0 0 70%;
+  clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%);
+ }
+
+ .about {
+  background: #03243e;
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* end of about section */
 
 
 
